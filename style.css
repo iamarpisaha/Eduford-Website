@@ -4,11 +4,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
-  overflow-x: hidden;
-}
 
 header {
+  overflow-x: hidden;
   transition: all 0.3s ease;
   padding: 1rem 1.5rem;
   position: sticky;
@@ -29,13 +27,16 @@ nav {
 nav img {
   width: 150px;
 }
+nav .fa {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
 
 .nav-links {
   flex: 1;
   text-align: right;
-}
-
-.nav-links.open {
 }
 
 .nav-links ul li {
@@ -109,14 +110,58 @@ nav img {
   transition: 0.3s;
 }
 
-/* media query */
+#course {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+#course h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+#course p {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+#course .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+#course .row .course-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+#course .row .course-col h3 {
+  font-weight: 600;
+  margin-block: 10px;
+}
+
+#course .row .course-col:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+/* ----------media query---------- */
+
 @media (max-width: 950px) {
   .text-box h1 {
-    font-size: 45px;
+    font-size: 3rem;
   }
-}
-nav .fa {
-  display: none;
+
+  #course h1 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -125,7 +170,7 @@ nav .fa {
   }
 
   .nav-links {
-    position: absolute;
+    position: fixed;
     background-color: #f44336;
     height: 100vh;
     width: 200px;
@@ -140,13 +185,12 @@ nav .fa {
   }
   nav .fa {
     display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
   }
   .nav-links ul {
     padding: 30px;
+  }
+  #course .row {
+    flex-direction: column;
   }
 }
 
