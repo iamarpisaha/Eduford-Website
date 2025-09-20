@@ -6,7 +6,7 @@ A responsive and modern landing page for a fictional university, "Eduford." This
 
 ## project Link
 
-🔗 [Visit the Eduford project on GitHub](https://github.com/iamarpisaha/eduford-university.git)
+🔗 [Visit the Eduford project on GitHub](https://iamarpisaha.github.io/Eduford-Website/)
 
 ## ✨ Features
 
